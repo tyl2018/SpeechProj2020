@@ -1,0 +1,13 @@
+gmm-est --binary=false --min-gaussian-occupancy=3 --mix-up=300 'exp/mono/%x.mdl' 'exp/mono/%x.acc' 'exp/mono/%y.mdl' 
+ERROR (gmm-est[5.3.57~1-6f9f]:Input():kaldi-io.cc:753) Error opening input stream 'exp/mono/%x.mdl'
+
+[ Stack-Trace: ]
+gmm-est() [0x5c16d8]
+kaldi::MessageLogger::HandleMessage(kaldi::LogMessageEnvelope const&, char const*)
+kaldi::MessageLogger::~MessageLogger()
+kaldi::Input::Input(std::string const&, bool*)
+main
+__libc_start_main
+gmm-est() [0x4cdb59]
+
+
